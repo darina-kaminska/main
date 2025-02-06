@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin:0px;
+        }
+
+        body{
+            border: 3px red solid;
+        }
+
+        .sec1{
+            background-color:rgb(150, 46, 152);
+        }
+
+        .name{
+            justify-self:center;
+        }
+
+        .cont1{
+            height:180px;
+            width:100%;
+            display:grid;
+            align-items: center;
+        
+        }
+
+        .k1{
+            background-color:white;
+            display:grid;
+            align-items: center;
+            height:120px;
+            width:50%;
+            justify-self: center;
+
+        }
+
+        .k2{
+            background-color:black;
+            height:50px;
+            width:60%;
+            justify-self: center;
+        }
+
+        .sec2{
+            background-color:grey;
+            height:250px;
+            display:grid;
+            align-items:center;
+
+        }
+
+        .cont2{
+            display:grid;
+            width:100%;
+            height:200px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .r1{
+            background-color:red;
+        }
+
+        .r2{
+            background-color:orange;
+        }
+
+        .r3{
+            background-color:aqua;
+        }
+
+        .r4{
+            background-color:yellow;
+        }
+
+        .sec3{
+            width:100%;
+            height:400px;
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .left{
+            background-color:green;
+            display:grid;
+        }
+
+        .center{
+            background-color: aqua;
+            display:grid;
+            align-items: end;
+        }
+
+        .right{
+            background-color:blue;
+        }
+
+        .left-cont{
+            background-color:orange;
+            width:60%;
+            height:300px;
+            justify-self: center;
+        }
+
+        .left-a{
+            background-color:pink;
+        }
+
+        .left-b{
+            background-color:yellow;
+        }
+
+        .cont-ab{
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            width:100%;
+            height:100%;
+        }
+
+        .center-cont{
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            width:100%;
+            height:340px;
+        }
+
+        .left-c{
+            background-color:red;
+        }
+
+        .center-c{
+            background-color:yellow;
+        }
+
+        .right-c{
+            background-color:orange;
+        }
+
+        .c-orange{
+            background-color: orange;
+            height:300px;
+        }
+
+        .c-red{
+            background-color: red;
+            height:150px;
+        }
+        
+        .name-c{
+            align-self: start;
+            justify-self:center;
+        }
+
+        .center-c{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: end;
+        }
+
+        .right-cont{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height:380px;
+            width: 100%;
+            align-items: end;
+        }
+
+        .d1,.d2,.d3{
+            height:200px;
+        }
+
+        .d1{
+            background-color:aqua;
+        }
+
+        .d2{
+            background-color:yellow;
+            margin-bottom:50px;
+        }
+
+        .d3{
+            background-color:orange;
+            margin-bottom:100px;
+            display:grid;
+            align-items: center;
+        }
+
+        .text{
+            width:80px;
+            height: 40px;
+            background-color:black;
+            color:aqua;
+            font-style: italic;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .t1{
+            justify-self: end;
+        }
+
+    </style>
+
+    <section class="sec1">
+        <div class="name">Шапка</div>
+        <div class="cont1">
+            <div class="k1">
+                <div class="k2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2">
+        <div class="name">Меню</div>
+        <div class="cont2">
+            <div class="r1"></div>
+            <div class="r2"></div>
+            <div class="r3"></div>
+            <div class="r4"></div>
+        </div>
+    </section>
+
+    <section class="sec3">
+        <div class="left">
+            <div class="name">Left block</div>
+            <div class="left-cont">
+                <div class="name">left</div>
+                <div class="cont-ab">
+                    <div class="left-a"></div>
+                    <div class="left-b"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="center">
+            <div class="name-c">Center block</div>
+            <div class="center-cont">
+                <div class="left-c"></div>
+                <div class="center-c">
+                    <div class="c-orange">
+                        <div class="name">A-c</div>
+                    </div>
+                    <div class="c-red">
+                        <div class="name">B-c</div>
+                    </div>
+                </div>
+                <div class="right-c"></div>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="name">Right block</div>
+            <div class="right-cont">
+                <div class="d1"></div>
+                <div class="d2"></div>
+                <div class="d3">
+                    <div class="text t1">text</div>
+                    <div class="text t2">text</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
