@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Example</title>
+    <style>
+        .nav{
+            position:fixed;
+            top:10px;
+        }
+
+        a{
+            text-decoration: none;
+            color:white;
+            margin: 10px;
+            background-color:black;
+            padding:10px;
+            border-radius:20px;
+        }
+
+
+        .block {
+            width: 300px;
+            height: 100px;
+            border: 2px black solid;
+            margin:50px;
+            padding: 10px;
+            overflow: auto;
+        }
+
+        .vert {
+            overflow-y: scroll; 
+        }
+
+        .horiz {
+            overflow-x: scroll; 
+            white-space: nowrap; 
+        }
+
+        .two {
+            overflow: scroll; 
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a target="_blank" href="page1.html">main</a>
+        <a target="_blank" href="page3.html">display and visibility</a>
+        <a target="_blank" href="page4.html">float</a>
+    </div>
+
+    <div class="block vert">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam saepe soluta, maxime voluptate eos a error enim sed optio pariatur totam voluptates eius inventore suscipit facere quas assumenda, iure perferendis!
+        Perferendis praesentium hic, et neque unde animi eligendi mollitia quam velit eum veniam laboriosam, officia aspernatur tempore ullam id labore? Esse dignissimos porro reprehenderit deleniti odio? Eum nisi id laudantium.
+        Eius tempore, dolorem voluptate aliquam ratione est quod porro doloribus veritatis ut deserunt explicabo. Esse, neque quibusdam nihil accusamus sed, soluta magni, sunt veritatis eaque tenetur atque aliquam impedit nam.
+        Amet, enim. Iure explicabo aspernatur libero eum ipsam quas quisquam error fugiat, vero, nihil corporis magni debitis! Dignissimos accusamus, assumenda ducimus harum tempore obcaecati velit dolor consequuntur laborum dolores laboriosam!
+        Provident delectus commodi libero eaque id impedit adipisci ea illum repellat, iure distinctio? Amet perferendis inventore eligendi eum voluptates, facere corporis saepe doloribus, dolor corrupti perspiciatis aut doloremque hic? Adipisci.
+    </div>
+
+    <div class="block horiz">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto modi mollitia quibusdam sunt repellat iure, minima nam blanditiis labore quisquam esse ut. Adipisci itaque officia blanditiis maxime perferendis iusto. Recusandae.
+        Aspernatur iste vitae doloribus dignissimos, quaerat numquam possimus eaque corporis, sunt quod voluptatibus natus accusamus architecto neque perspiciatis praesentium ipsa aliquam! Blanditiis cupiditate animi provident vero quo reiciendis repellendus. Et?
+        Consequuntur iste incidunt sapiente tenetur maiores vel excepturi non! Eius obcaecati illum unde natus harum, dignissimos quibusdam delectus recusandae voluptate facilis, corrupti laborum ducimus enim nobis voluptatem pariatur! Sunt, iusto!
+        Eius perspiciatis commodi eligendi sequi id voluptas sunt laudantium minima, sit, voluptatum et doloremque dignissimos aperiam? Quaerat doloribus cupiditate iusto perspiciatis sed blanditiis, ut aperiam, ex alias, tempora suscipit eligendi.
+        Excepturi distinctio, magnam quae dolore, aperiam dicta laboriosam sapiente reiciendis nostrum enim iusto obcaecati deleniti perspiciatis consequuntur culpa impedit assumenda iure voluptatem, facilis neque. Et quas minus aspernatur aliquam. Officiis.
+    </div>
+
+    <div class="block two">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, corrupti dolore? Cupiditate, eum autem, tempore sint dolore expedita consequuntur consectetur perspiciatis illo voluptatem iusto? Eligendi fugiat consequatur quas laboriosam ab.
+        Quos perspiciatis dolor placeat eaque quae quidem? Est perspiciatis officiis necessitatibus ut, earum quibusdam, neque officia, voluptates esse debitis et suscipit ea error amet eligendi odio temporibus! Fugiat, atque veniam.
+        Delectus optio corporis libero laboriosam reiciendis dicta adipisci vel beatae labore deleniti magnam, veniam dolorem placeat nemo sint quis tempora enim molestias. Rem aliquid dolore, obcaecati perspiciatis nesciunt explicabo qui!
+        Quas quos praesentium quod tempora, dicta reiciendis dolor architecto explicabo sunt cumque expedita consectetur modi accusantium atque repellat illo earum repellendus? Error quod quidem accusantium distinctio molestiae eveniet ab provident?
+        Magni exercitationem libero dolore repudiandae consectetur. Aut quibusdam, velit architecto ullam in fugiat debitis voluptatum molestias sequi quod tempora molestiae facilis ducimus eaque expedita est voluptatibus pariatur amet maxime officia.
+    </div>
+</body>
+</html>
