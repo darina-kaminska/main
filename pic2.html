@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            border: 3px red solid;
+        }
+
+        .sec1 {
+            background-color: rgb(150, 46, 152);
+        }
+
+        .cont1 {
+            height: 180px;
+            width: 100%;
+            display: grid;
+            align-items: center;
+        }
+
+        .k1 {
+            background-color: white;
+            display: grid;
+            align-items: center;
+            height: 120px;
+            width: 50%;
+            justify-self: center;
+
+        }
+
+        .k2 {
+            background-color: black;
+            height: 50px;
+            width: 60%;
+            justify-self: center;
+            animation: fifthOwnAnimation 10s;
+        }
+
+        .sec2 {
+            background-color: grey;
+            height: 250px;
+            display: grid;
+            align-items: center;
+
+        }
+
+        .cont2 {
+            display: grid;
+            width: 100%;
+            height: 200px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .r1 {
+            background-color: red;
+        }
+
+        .r2 {
+            background-color: orange;
+        }
+
+        .r3 {
+            background-color: aqua;
+        }
+
+        .r4 {
+            background-color: yellow;
+        }
+
+        .sec3 {
+            width: 100%;
+            height: 400px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .left {
+            background-color: green;
+            display: grid;
+        }
+
+        .center {
+            background-color: aqua;
+            display: grid;
+            align-items: end;
+        }
+
+        .right {
+            background-color: blue;
+        }
+
+        .left-cont {
+            background-color: orange;
+            width: 60%;
+            height: 300px;
+            justify-self: center;
+        }
+
+        .left-a {
+            background-color: pink;
+            animation: firstOwnAnimation 5s;
+        }
+
+        .left-b {
+            background-color: yellow;
+            animation: secondOwnAnimation 10s;
+        }
+
+        .cont-ab {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            height: 100%;
+        }
+
+        .name {
+            justify-self: center;
+        }
+
+        .center-cont {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            height: 340px;
+        }
+
+        .left-c {
+            background-color: red;
+        }
+
+        .center-c {
+            background-color: yellow;
+        }
+
+        .right-c {
+            background-color: orange;
+        }
+
+        .c-orange {
+            background-color: orange;
+            height: 300px;
+        }
+
+        .c-red {
+            background-color: red;
+            height: 150px;
+        }
+
+
+        .center-c {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: end;
+        }
+
+        .right-cont {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: 380px;
+            width: 100%;
+            align-items: end;
+        }
+        
+        .d1,
+        .d2,
+        .d3 {
+            height: 200px;
+        }
+
+        .d1 {
+            background-color: aqua;
+        }
+
+        .d2 {
+            background-color: yellow;
+            margin-bottom: 50px;
+        }
+
+        .d3 {
+            background-color: orange;
+            margin-bottom: 100px;
+            display: grid;
+            align-items: center;
+        }
+
+        .text {
+            width: 80px;
+            height: 40px;
+            background-color: black;
+            color: aqua;
+            font-style: italic;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .t1 {
+            justify-self: end;
+        }
+
+        .sec2 {
+            border-radius: 1px red dotted;
+        }
+
+        /* 1 */
+        div {
+            font-size: 18px;
+        }
+
+        /* 2 */
+        .text {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* 3 */
+        #name-c {
+            align-self: start;
+            justify-self: center;
+        }
+
+        /* 4 */
+        * {
+            margin: 0px;
+        }
+
+        /* 5 */
+        body .center-c {
+            color: green;
+        }
+
+        /* 6 */
+        .d1,
+        .d2,
+        .d3 {
+            height: 200px;
+        }
+
+        /* 7 */
+        img[alt] {
+            width: 10rem;
+            border: 2px red solid;
+        }
+
+        /* 8 */
+        img[alt="cat"] {
+            width: 10rem;
+            border-radius: 100%;
+            ;
+        }
+
+        /* 9 */
+        div .r1,
+        div .r3 {
+            border: 3px purple dotted;
+        }
+
+        /* 10 */
+        .left+div {
+            background-color: red;
+        }
+
+        /* 11 */
+        .left-cont>div {
+            color: blue;
+        }
+
+        /* 12 */
+        .left-a~div {
+            background-color: blue;
+        }
+
+        /* 13 */
+        .cont1:hover {
+            transform: scale(1.2);
+        }
+
+        /* 14 */
+        .click:active {
+            color: yellow;
+        }
+
+        /* 15 */
+        .click::after {
+            content: '-----------'
+        }
+
+        /* 16 */
+        .click::before {
+            content: '~~~~~~~~'
+        }
+
+        /* 17 */
+        .n:nth-child(2n+1){
+            color:red;
+            font-weight: 700;
+        }
+
+        /* 18 */
+        .n:last-child{
+            color:blue;
+        }
+
+        /* 19 */
+        .n:first-child{
+            color:green;
+        }
+
+        .cont1{
+            transition: transform 1.5s ease-in-out;
+        }
+
+        .r1,.r2,.r3,.r4{
+            transition:3s;
+        }
+        
+        .r1:hover{
+            filter:brightness(.5)
+        }
+        
+        .r2:hover{
+          font-size:2rem;
+          transform: skew(30deg,20deg);
+          filter:drop-shadow(15px 15px)
+        }
+
+        .r3:hover{
+            transform:translate(200px, 150px);
+            filter:opacity(0.7)
+        }
+
+        .r4:hover{
+            transform:rotate(45deg);
+            filter:sepia(1);
+        }
+
+        img[alt]:hover{
+            filter:blur(2px);
+        }
+
+        img[alt='cat']:hover{
+            filter:contrast(.5) hue-rotate(100deg);
+        }
+        
+        .c-orange:hover{
+            animation:thirdOwnAnimation 5s;
+        }
+
+        .right-c{
+            animation: fourthOwnAnimation 5s;
+        }
+
+        
+        
+        @keyframes firstOwnAnimation {
+            from{
+                background-color:blue;
+            }
+
+            to{
+                background-color:blueviolet;
+            }
+        }
+
+        @keyframes secondOwnAnimation {
+            0% {
+                background-color: pink;
+            }
+
+            20%{
+                background-color:coral;
+            }
+
+            40%{
+                background-color:darkmagenta;
+            }
+
+            60%{
+                background-color:darkorchid;
+            }
+
+            80%{
+                background-color:fuchsia;
+            }
+
+            100%{
+                background-color:hotpink;
+            }
+        }
+
+        @keyframes thirdOwnAnimation {
+            0%{
+                transform: skew(20deg, 30deg);
+            }
+
+            25%{
+                transform: rotate(50deg);
+            }
+
+            50%{
+                transform:matrix3d(1,2,3,4,5,6)
+            }
+
+            75%{
+                transform:scale(1.2);
+            }
+
+            100%{
+                transform:translate(100px, 150px) ;
+            }
+        }
+        
+        @keyframes fourthOwnAnimation {
+            0%{
+                filter: brightness(.5);
+                filter:hue-rotate(100deg);
+            }
+            
+            50%{
+                filter:grayscale(0.5);
+                filter:contrast(1);
+            }
+            
+            100%{
+                filter:opacity(0.9);
+            }
+        }
+
+        @keyframes fifthOwnAnimation {
+            0%{
+                transform: translate(-100px, 50px);
+            }
+
+            10%{
+                transform:rotate(30deg);
+            }
+            
+            20%{
+                transform:skew(20deg, 20deg);
+                filter:drop-shadow(10px 10px);
+            }
+
+            30%{
+                transform: translate(100px, 50px);
+            }
+
+            40%{
+                transform:translate(100px, -50px);
+            }
+
+            50%{
+                transform:skew(-20deg, -20deg);
+            }
+
+            60%{
+                transform:rotate(-30deg);
+            }
+
+            70%{
+                transform: translate(-100px, 50px);
+            }
+
+            80%{
+                transform:skew(20deg, 20deg);
+            }
+
+            90%{
+                transform:rotate(-30deg);
+            }
+
+            100%{
+                transform: translate(-100px, -50px)
+            }
+        }
+
+    </style>
+
+    <section class="sec1">
+        <div class="name">Шапка</div>
+        <div class="cont1">
+            <div class="k1">
+                <div class="k2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2">
+        <p class="name">Меню</p>
+        <div class="cont2">
+            <div class="r1">
+                <a class="click" href="#">Click</a>
+            </div>
+            <div class="r2">
+                <span class="n">1</span>
+                <span class="n">2</span>
+                <span class="n">3</span>
+                <span class="n">4</span>
+                <span class="n">5</span>
+                <span class="n">6</span>
+                <span class="n">7</span>
+                <span class="n">8</span>
+            </div>
+            <div class="r3"></div>
+            <div class="r4"></div>
+        </div>
+    </section>
+
+    <section class="sec3">
+        <div class="left">
+            <p class="name">Left block</p>
+            <div class="left-cont">
+                <div class="name">left</div>
+                <div class="cont-ab">
+                    <div class="left-a"></div>
+                    <div class="left-b"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="center">
+            <p id="name-c">Center block</p>
+            <div class="center-cont">
+                <div class="left-c"></div>
+                <div class="center-c">
+                    <div class="c-orange">
+                        <div class="name">A-c</div>
+                    </div>
+                    <div class="c-red">
+                        <div class="name">B-c</div>
+                    </div>
+                </div>
+                <div class="right-c"></div>
+            </div>
+
+        </div>
+        <div class="right">
+            <p class="name">Right block</p>
+            <div class="right-cont">
+                <div class="d1">
+                    <img src="img2.jpg" alt="pic">
+                </div>
+                <div class="d2">
+                    <img src="img1.jpg" alt="cat">
+                </div>
+                <div class="d3">
+                    <div class="text t1">text</div>
+                    <div class="text t2">text</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
