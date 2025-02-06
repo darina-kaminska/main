@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+
+        *{
+            background-color:rgb(221, 211, 199);
+        }
+
+        #absoluteWay, #relativeWay{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .title1{
+            color:brown;
+        }
+
+        .title2{
+            color:darkslateblue;
+        }
+        
+        #absoluteWay > p{
+            font-weight:700;
+        }
+
+        #relativeWay > cite{
+            font-size:20px;
+        }
+
+    </style>
+
+    <div id = "absoluteWay">
+        <h1 class="title1">Абсолютний шлях </h1>
+        <p>
+            Це повний шлях, який починається з самого початку і показує де знаходиться файл, незалежно від того де ти зараз знаходишся
+        </p>
+        <cite>
+            Наприклад, "C:/Фото/файл.jpg"
+
+        </cite>
+    </div>
+
+    <div id = "relativeWay">
+        <h1 class="title2">Відносний шлях </h1>
+        <p>
+            Це шлях до файлу який вказуєш, починаючи від того місця де зараз знаходишся. 
+        </p>
+        <cite>
+            Наприклад, якщо ти в папці "Документи" і хочеш відкрити файл із папки "Фото", то відносний шлях буде "Фото/файл.jpg"
+        </cite>
+
+    </div>
+
+    <div>
+        <a href="main2.html">2 сторiнка</a>
+        <a href="main3.html">3 сторiнка</a>
+        <a href="main4.html">4 сторiнка</a>
+    </div>
+
+</body>
+</html>
